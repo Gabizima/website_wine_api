@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    margin :0;
+    font-family: "Open Sans", sans-serif;
+}
+header{
+    background-color: #450920;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#wine-brand{
+    display: flex;
+    width: 40px;
+    align-items: center;
+}
+
+#wine-brand p{
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+}
+
+.nav-items{
+    display: flex;
+    margin: 5px;
+
+}
+
+.nav-item{
+    list-style-type: none;
+    margin-right: 10px;
+
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* ELEMENTS */
+#main-element{
+    background: linear-gradient(0.30turn,#450920, #00000000), url("./assets/pexels-pixabay-290316.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+#first-main-element{
+    width: 50%;
+    padding-top: 10%;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.element-sub{
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+
+#first-main-element h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.description{
+    font-weight: 100;
+    font-size : 25px;
+    width: 80%;
+    margin-bottom: 60px;
+}
+/* button index.html */
+.discover-product{
+    background-color: #f9dbbd;
+    width: 220px;
+    padding: 20px;
+}
+
+.discover-product a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
