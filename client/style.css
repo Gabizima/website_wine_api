@@ -147,7 +147,7 @@ header{
     font-size: 15px;
 }
 
-#display-cards{
+.display-cards{
     display: flex;
     flex-wrap: wrap;
     margin: auto;

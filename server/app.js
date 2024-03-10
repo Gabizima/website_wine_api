@@ -3,6 +3,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const axios = require('axios'); // Importation de la bibliothèque Axios pour effectuer des requêtes HTTP
 const path = require('path');
+const fs = require('fs');
+const morgan = require('morgan');
+
+const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
+
 
 const API_URL = "https://api.sampleapis.com/wines/reds";
 
@@ -12,6 +17,9 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
+
+// Configuration de Morgan
+app.use(morgan('combined', { stream: accessLogStream }));
 
 const clientPath = path.join(__dirname, '..', 'client');
 app.use(express.static(clientPath));
@@ -55,6 +63,7 @@ async function searchWineById(wineId) {
             
             // Rechercher le vin avec l'ID spécifié dans les données récupérées
             const wineSEARCHED =  wines.find(wine => wine.id === wineId)
+            console.log(wineSEARCHED)
             return wineSEARCHED;
             
         } else {
