@@ -85,3 +85,71 @@ header{
     color: black;
     font-weight: 700;
 }
+
+/* INDEX.HTML */
+#search-form{
+    background-color: #eeeeee;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+#search-form p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 20px;
+}
+#search-input{
+    width: 70%;
+    height: 40px;
+    border: 2px solid #bbbbbb;
+    margin-right: 30px;
+}
+#search-submit{
+    font-family: "Open Sans", sans-serif;
+    width: 200px;
+    background-color: #bbbbbb;
+    border: none;
+    font-weight: 100;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#main-wine-element{
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    
+}
+
+#main-wine-element h2{
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+
+
+}
+#country-wine-element p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.card-wine{
+    border: 1px solid #9a9a9a;
+    margin-left: 30px;
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+
+.card-wine p, span{
+    font-size: 15px;
+}
+
+#display-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
